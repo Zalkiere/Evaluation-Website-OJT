@@ -1,0 +1,145 @@
+body {
+    background-color: #fceeed;
+    font-family: 'Lato', sans-serif;
+  }
+
+  #page-wrapper {
+    position: relative;
+  }
+
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+header {
+    min-height: 55px;
+    display: flex;
+    
+    /* justify-content: space-between;*/
+    align-items: center;
+    background-color: #558257;
+
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+  }
+
+  .brand {
+    left: 0;
+  }
+
+  .name {
+    max-width: 300px;
+    position: relative;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  h1 {
+    color: whitesmoke;
+  }
+
+  li {
+    list-style: none;
+    color: whitesmoke;
+    font-size: 18px; 
+    font-weight: bold;
+  }
+
+  nav > ul {
+    position: relative;
+    left: 0;
+    margin-left: -20px;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 850px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding-right: 25px;
+    position: fixed;
+    right: 0;
+    
+  }
+
+  .user > p {
+    margin-left: 5px;
+  }
+
+  @media (max-width: 850px) {
+    .user {
+      flex-direction: row;
+      margin-right: 15px;
+    }
+  }
+
+  .col-container {
+    margin-top: 100px;
+    display: table;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-left {
+    display: table-cell;
+    padding: 16px;
+    width: 35%;
+    align-items: center;
+  }
+
+  .col-left > img{
+    height: 600px;
+    width: 400px;
+    object-fit: fill;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+  }
+
+  .col-right {
+    display: table-cell;
+    padding: 16px;
+    width: 65%;
+  }
+
+  .col-right > img{
+    height:310px;
+    width: 520px;
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stack {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .stack > img{
+    width: 250px;
+    height: 275px;
+    object-fit: cover;
+  }
