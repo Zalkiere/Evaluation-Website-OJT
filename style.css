@@ -43,21 +43,23 @@ header {
     color: whitesmoke;
   }
 
-  li {
-    list-style: none;
-    color: whitesmoke;
+  .btn {
+    background-color: #558257;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
     font-size: 18px; 
     font-weight: bold;
+    opacity: 0.6;
+    transition: 0.3s;
   }
 
-  nav > ul {
-    position: relative;
-    left: 0;
-    margin-left: -20px;
-    width: 30vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  .btn:hover {
+    background-color: #558257;
+    color: #254E48;
   }
 
   .user {
@@ -99,6 +101,42 @@ header {
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 40px;
+    left: 290px;
+    font-size: 35px;
+    font-family: Georgia, serif;
+    color: #162926;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 260px;
+    right: 600px;
+    font-size: 35px;
+    font-family: Georgia, serif;
+    color: #162926;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 30px;
+    right: 550px;
+    font-size: 35px;
+    font-family: Georgia, serif;
+    color: #162926;
+  }
+
+  .bottom-right {
+    position: absolute;
+    bottom: 30px;
+    right: 320px;
+    font-size: 35px;
+    font-family: Georgia, serif;
+    color: #162926;
   }
 
   .col-right {
