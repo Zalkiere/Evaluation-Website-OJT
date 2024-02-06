@@ -60,12 +60,6 @@ header {
     justify-content: space-around;
   }
 
-  @media (max-width: 850px) {
-    nav > ul {
-      flex-direction: column;
-    }
-  }
-
   .user {
     display: flex;
     align-items: center;
@@ -80,13 +74,6 @@ header {
 
   .user > p {
     margin-left: 5px;
-  }
-
-  @media (max-width: 850px) {
-    .user {
-      flex-direction: row;
-      margin-right: 15px;
-    }
   }
 
   .col-container {
