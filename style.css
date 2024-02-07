@@ -1,7 +1,10 @@
 body {
-    margin: 0;
     background-color: #fceeed;
     font-family: 'Lato', sans-serif;
+  }
+
+  #page-wrapper {
+    position: relative;
   }
 
   .container {
@@ -13,12 +16,10 @@ body {
 header {
     min-height: 55px;
     display: flex;
-    
-    /* justify-content: space-between;*/
     align-items: center;
     background-color: #558257;
 
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0px;
     right: 0px;
@@ -104,7 +105,7 @@ header {
     font-weight: bold;
     color: whitesmoke;
     padding-right: 25px;
-    position: absolute;
+    position: fixed;
     opacity: 1;
     right: 0;
     
@@ -113,107 +114,72 @@ header {
   .user > p {
     margin-left: 5px;
   }
-  
-  .row {
-    width: 80%;
-    margin-top: 30px;
+
+  .col-container {
+    margin-top: 100px;
+    display: table;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  }
+
+  @media (max-width: 800px) {
+    .col-container {
+      margin-top: 130px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 400px;
+    }
+  }
+
+  .col-left {
+    display: table-cell;
+    padding: 16px;
+    width: 35%;
     align-items: center;
   }
 
-  .row::after {
-    content: "";
-    /* display: table; */
-    /* clear: both; */
-  }
-
-  .column-l {
-    float: left;
-    width: 35%;
-    padding: 15px;
-    position: relative;
-  }
-
-  .column-r {
-    float: left;
-    padding: 15px;
-    width: auto;
-    position: relative;
-  }
-
-  @media screen and (max-width: 992px) {
-    .column-l, .column-r {
-      width: 50%;
+  @media (max-width: 800px) {
+    .col-left {
+      margin-top: 130px;
+      flex-wrap: wrap;
       flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 400px;
     }
   }
 
-  @media screen and (max-width:600px) {
-    .column-l, .column-r {
-      width: 100%;
-      flex-direction: column;
-    }
-  }
-
-  /* .left-image {
-    position: relative;
-  } */
-
-  .column-l > img{
-    height: 580px;
-    width: 100%;
-    max-width: 425px;
+  .col-left > img{
+    height: 600px;
+    max-width: 400px;
+    object-fit: fill;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
-  }
-
-  .column-r > img{
-    height: 300px;
-    width: 580px;
-    display: block;
-    object-fit: cover;
-  }
-
-  @media screen and (max-width:600px) {
-    .column-l > img, .column-r > img{
-    max-width: 100%;
-    height: auto;
-    }
   }
 
   .top-left {
-    position: Absolute;
-    top: 30px;
-    left: 40px;
+    position: absolute;
+    top: 40px;
+    left: 290px;
     font-size: 35px;
     font-family: Georgia, serif;
     color: #162926;
-  }
-
-  @media (max-width:600px) {
-    .top-left{
-    font-size: 30px;
-    }
   }
 
   .top-right {
-    position: Absolute;
-    bottom: 310px;
-    left: 30px;
+    position: absolute;
+    top: 260px;
+    right: 600px;
     font-size: 35px;
     font-family: Georgia, serif;
     color: #162926;
-  }
-
-  @media (max-width:600px) {
-    .top-right{
-    font-size: 30px;
-    }
   }
 
   .bottom-left {
@@ -228,14 +194,29 @@ header {
   .bottom-right {
     position: absolute;
     bottom: 30px;
-    right: 300px;
+    right: 320px;
     font-size: 35px;
     font-family: Georgia, serif;
     color: #162926;
   }
 
+  .col-right {
+    display: table-cell;
+    padding: 16px;
+    width: 65%;
+  }
+
+  .col-right > img{
+    height:310px;
+    width: 520px;
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .stack {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -244,17 +225,7 @@ header {
   }
 
   .stack > img{
-    width: 280px;
-    height: 260px;
+    width: 250px;
+    height: 275px;
     object-fit: cover;
-  }
-
-  @media screen and (max-width:600px) {
-    .stack > img{
-    width: 480px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    }
   }
